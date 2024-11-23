@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellPoint - Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header small-header">
+        <div class="container">
+            <h1>Create Account</h1>
+            <p>Sign up or log in to start selling and buying products!</p>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <!-- Toggle for Login/Register -->
+            <div class="form-toggle">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="registerBtn">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="form active" action="create_account.php" method="POST">
+                <h2>Login</h2>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="form-footer">
+                    Forgot your password? <span id="forgotPasswordLink">Reset it here</span><br>
+                    Don't have an account? <span id="switchToRegister">Register here</span>
+                </p>
+            </form>
+
+            <!-- Registration Form -->
+            <form id="registerForm" class="form" action="create_account.php" method="POST">
+                <h2>Register</h2>
+                <label for="username">Full Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="emailRegister" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="passwordRegister">Password</label>
+                <input type="password" id="passwordRegister" name="password" placeholder="Create a password" required>
+
+                <button type="submit" class="btn-primary">Register</button>
+                <p class="form-footer">Already have an account? <span id="switchToLogin">Login here</span></p>
+            </form>
+
+            <!-- Forgot Password Form -->
+            <form id="forgotPasswordForm" class="form">
+                <h2>Reset Password</h2>
+                <label for="forgotEmail">Email</label>
+                <input type="email" id="forgotEmail" name="email" placeholder="Enter your email" required>
+
+                <button type="submit" class="btn-primary">Send Reset Link</button>
+                <p class="form-footer">
+                    Remembered your password? <span id="switchToLoginFromForgot">Login here</span>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 SellPoint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

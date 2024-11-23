@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellPoint - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <h1>Welcome to <span class="highlight">SellPoint</span></h1>
+            <p>Your one-stop solution for buying and selling products!</p>
+            <a href="sell_with_us.php" class="btn-primary">Start Selling</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">SellPoint</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sell_with_us.php">Sell with Us</a></li>
+                <li><a href="wishlist.php">Wishlist</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="create_account.html" class="btn-secondary">Account</a></li>
+            </ul>
+    
+            <!-- Product Search (Global Search in Navbar) -->
+            <form method="GET" action="php/search.php" class="search-form navbar-search">
+                <input type="text" name="search_term" placeholder="Search products..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product Card Component -->
+                <?php include "../components/product_card.php"; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 SellPoint. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="policies.html">Policies</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
