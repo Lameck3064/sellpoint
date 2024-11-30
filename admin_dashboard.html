@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="admin-dashboard">
+    <!-- Sidebar -->
+    <div class="admin-sidebar">
+        <h3>Admin Dashboard</h3>
+        <ul>
+            <li><a href="manage_users.php" id="manageUsersLink">Manage Users</a></li>
+            <li><a href="manage_products.php" id="manageProductsLink">Manage Products</a></li>
+            <li><a href="subscriptions.php" id="subscriptionsLink">Subscriptions</a></li>
+        </ul>
+        <!-- Log Out Button -->
+        <a href="logout.php" class="logout-button">Log Out</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="admin-main">
+        <h2 id="pageTitle">Manage Users</h2>
+        
+        <!-- Manage Users Section -->
+        <table class="admin-table" id="userTable">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User rows will be dynamically populated here -->
+            </tbody>
+        </table>
+
+        <!-- Manage Products Section -->
+        <h2 id="productTitle">Manage Products</h2>
+        <table class="admin-table" id="productTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product rows will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

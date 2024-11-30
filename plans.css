@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Plans Container */
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.plan-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.price {
+    font-size: 20px;
+    color: #2e8b57;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #267a48;
+}
+
+/* Subscription Form - Initially hidden */
+.subscription-form {
+    display: none;  /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subscription-form input {
+    padding: 10px;
+    margin: 15px 0;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subscription-form button {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscription-form button:hover {
+    background-color: #267a48;
+}
+
+/* Hide Plan Cards after Subscribe is clicked */
+.plans-container.hidden {
+    display: none;
+}
